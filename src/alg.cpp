@@ -21,9 +21,9 @@ int countPairs2(int *arr, int len, int value) {
       count++;
       left++;
       right--;
-    }else if (sum < value) {
+    } else if (sum < value) {
       left++;
-    }else {
+    } else {
       right--;
     }
   }
@@ -42,7 +42,7 @@ int countPairs3(int *arr, int len, int value) {
       if (arr[mid] >= target) {
         first_pos = mid;
         right = mid - 1;
-      }else {
+      } else {
         left = mid + 1;
       }
     }
@@ -56,7 +56,7 @@ int countPairs3(int *arr, int len, int value) {
       if (arr[mid] <= target) {
         last_pos = mid;
         left = mid + 1;
-      }else {
+      } else {
         right = mid - 1;
       }
     }
